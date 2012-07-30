@@ -8,7 +8,10 @@ import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+<<<<<<< HEAD
 import javax.print.attribute.standard.Sides;
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -30,7 +33,10 @@ public class FrmSolicitud extends javax.swing.JFrame {
         configGrilla();
         cargarRubro();
         cargarPrograma();
+<<<<<<< HEAD
         cargarArea();
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         RbBien.setSelected(true);
         responsable();
     }
@@ -72,9 +78,12 @@ public class FrmSolicitud extends javax.swing.JFrame {
         btnGuardar = new javax.swing.JButton();
         btnBorrar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
+<<<<<<< HEAD
         btnSalir = new javax.swing.JButton();
         lblRubro1 = new javax.swing.JLabel();
         cboArea = new javax.swing.JComboBox();
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -121,7 +130,11 @@ public class FrmSolicitud extends javax.swing.JFrame {
         PnlTipoLayout.setVerticalGroup(
             PnlTipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlTipoLayout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(0, 3, Short.MAX_VALUE)
+=======
+                .addGap(0, 7, Short.MAX_VALUE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 .addGroup(PnlTipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(RbBien, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(RbServicio, javax.swing.GroupLayout.Alignment.TRAILING)))
@@ -176,7 +189,11 @@ public class FrmSolicitud extends javax.swing.JFrame {
         );
         pnlRegistroLayout.setVerticalGroup(
             pnlRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
 
         btnAdd.setText("Add");
@@ -209,9 +226,13 @@ public class FrmSolicitud extends javax.swing.JFrame {
         );
         PnlDescripcionLayout.setVerticalGroup(
             PnlDescripcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(PnlDescripcionLayout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 3, Short.MAX_VALUE))
+=======
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
 
         btnGuardar.setText("Guardar");
@@ -225,6 +246,7 @@ public class FrmSolicitud extends javax.swing.JFrame {
 
         btnCancelar.setText("Cancelar");
 
+<<<<<<< HEAD
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -241,6 +263,8 @@ public class FrmSolicitud extends javax.swing.JFrame {
             }
         });
 
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         javax.swing.GroupLayout PnlSolicitudLayout = new javax.swing.GroupLayout(PnlSolicitud);
         PnlSolicitud.setLayout(PnlSolicitudLayout);
         PnlSolicitudLayout.setHorizontalGroup(
@@ -257,14 +281,22 @@ public class FrmSolicitud extends javax.swing.JFrame {
                                         .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(lblNumero)
                                             .addComponent(lblRubro)
+<<<<<<< HEAD
                                             .addComponent(lblPrograma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(lblRubro1))
+=======
+                                            .addComponent(lblPrograma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                                         .addGap(21, 21, 21)
                                         .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(cboPrograma, javax.swing.GroupLayout.Alignment.TRAILING, 0, 176, Short.MAX_VALUE)
                                             .addComponent(txtNumero, javax.swing.GroupLayout.Alignment.TRAILING)
+<<<<<<< HEAD
                                             .addComponent(cboRubro, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(cboArea, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                                            .addComponent(cboRubro, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                                         .addGap(28, 28, 28)
                                         .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(PnlSolicitudLayout.createSequentialGroup()
@@ -294,15 +326,23 @@ public class FrmSolicitud extends javax.swing.JFrame {
                                 .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(19, 19, 19))))
                     .addGroup(PnlSolicitudLayout.createSequentialGroup()
+<<<<<<< HEAD
                         .addGap(47, 47, 47)
+=======
+                        .addGap(74, 74, 74)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                         .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(btnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                         .addGap(10, 10, 10)
                         .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
+=======
+                        .addGap(0, 144, Short.MAX_VALUE)))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 .addContainerGap())
         );
         PnlSolicitudLayout.setVerticalGroup(
@@ -318,13 +358,18 @@ public class FrmSolicitud extends javax.swing.JFrame {
                         .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(lblPrograma)
                             .addComponent(cboPrograma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< HEAD
                     .addComponent(PnlTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                    .addComponent(PnlTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 .addGap(26, 26, 26)
                 .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblRubro)
                     .addComponent(cboRubro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblResponsable)
                     .addComponent(txtResponsable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD
                 .addGap(26, 26, 26)
                 .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblRubro1)
@@ -332,6 +377,11 @@ public class FrmSolicitud extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(PnlDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                .addGap(18, 18, 18)
+                .addComponent(PnlDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCantidad)
                     .addComponent(lblDescripcion)
@@ -344,6 +394,7 @@ public class FrmSolicitud extends javax.swing.JFrame {
                     .addComponent(btnAdd))
                 .addGap(18, 18, 18)
                 .addComponent(pnlRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnGuardar)
@@ -351,6 +402,14 @@ public class FrmSolicitud extends javax.swing.JFrame {
                     .addComponent(btnCancelar)
                     .addComponent(btnSalir))
                 .addGap(87, 87, 87))
+=======
+                .addGap(27, 27, 27)
+                .addGroup(PnlSolicitudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnGuardar)
+                    .addComponent(btnBorrar)
+                    .addComponent(btnCancelar))
+                .addGap(26, 26, 26))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -361,7 +420,11 @@ public class FrmSolicitud extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addComponent(PnlSolicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+            .addComponent(PnlSolicitud, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
 
         pack();
@@ -420,6 +483,7 @@ private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     insertar();
 }//GEN-LAST:event_btnGuardarActionPerformed
 
+<<<<<<< HEAD
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnSalirActionPerformed
@@ -428,6 +492,8 @@ private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         
     }//GEN-LAST:event_cboAreaActionPerformed
 
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     private void cargarItem(){
         txtId.setText(FrmBucarBien.vcod);
         txtArticulo.setText(FrmBucarBien.vdes);
@@ -493,6 +559,7 @@ private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
     
     
+<<<<<<< HEAD
     private void cargarArea(){
         try {
             String sql = "SELECT * FROM area order by descripcion ";
@@ -508,6 +575,8 @@ private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
     
     
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     private void tipo(){
         switch (t) {
             case 1:  RbBien.setSelected(true);
@@ -548,9 +617,15 @@ private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
             z.rs.next();
             int idus = Integer.parseInt(z.rs.getString("id"));
             
+<<<<<<< HEAD
             int area = z.buscaCod("select id from area where descripcion like '%"+cboArea.getSelectedItem().toString()+"%'");
             int rubro = z.buscaCod("select id from rubro where descripcion like '%"+cboRubro.getSelectedItem().toString()+"%'");
             int programa = z.buscaCod("select id from programa where descripcion like '%"+cboPrograma.getSelectedItem().toString()+"%'");
+=======
+            int area = z.buscaCod("select id from area");
+            int rubro = z.buscaCod("select id from rubro");
+            int programa = z.buscaCod("select id from programa");
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
             
             String sql = "INSERT INTO solicitud (nro, fechasol, fechaentrega, descripcion, estado, usrsol,"+
                     "usrarpo, area, rubro, programa) VALUES ("+
@@ -632,8 +707,11 @@ private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     private javax.swing.JButton btnBorrar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnGuardar;
+<<<<<<< HEAD
     private javax.swing.JButton btnSalir;
     private javax.swing.JComboBox cboArea;
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     private javax.swing.JComboBox cboPrograma;
     private javax.swing.JComboBox cboRubro;
     private javax.swing.JScrollPane jScrollPane1;
@@ -645,7 +723,10 @@ private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     private javax.swing.JLabel lblPrograma;
     private javax.swing.JLabel lblResponsable;
     private javax.swing.JLabel lblRubro;
+<<<<<<< HEAD
     private javax.swing.JLabel lblRubro1;
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     private javax.swing.JPanel pnlRegistro;
     private javax.swing.JTextField txtArticulo;
     private javax.swing.JTextField txtCantidad;

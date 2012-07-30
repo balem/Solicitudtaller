@@ -13,8 +13,13 @@ public class Conexion {
     Connection con;
     Statement snt;
     ResultSet rs;
+<<<<<<< HEAD
     static String server = "localhost";
     static String usr = "root";
+=======
+    static String server = "192.168.1.254";
+    static String usr = "solicitud2";
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     static String pass = "infinito";
     static String db = "solicitud2";
     String url = "jdbc:mysql://"+server+"/"+db;
@@ -66,6 +71,7 @@ public class Conexion {
                  return aux;
      }
      
+<<<<<<< HEAD
     public int obtenerRol(String usuario){
         int aux = 0;
         try {
@@ -82,5 +88,7 @@ public class Conexion {
         
     }
     
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     
 }

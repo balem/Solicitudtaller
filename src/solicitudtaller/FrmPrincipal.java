@@ -24,16 +24,25 @@ import javax.swing.table.DefaultTableModel;
 public class FrmPrincipal extends javax.swing.JFrame {
     DefaultTableModel modelo = new DefaultTableModel();
     Conexion z = new Conexion();
+<<<<<<< HEAD
     int fb = 0; //filtro Bandera
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
     /** Creates new form FrmPrincipal */
     public FrmPrincipal() {
             initComponents();
             configGrilla();
+<<<<<<< HEAD
             cargarGrilla();
             lbluser.setText(FrmAcceso.usuario);
             int nivel = z.obtenerRol(FrmAcceso.usuario);
             nivelesUsuarios(nivel);
+=======
+           // cargarGrilla();
+            lbluser.setText(FrmAcceso.usuario);
+            rolusuario();
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     }
     
     
@@ -46,6 +55,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         modelo.addColumn("Estado");
     }
     
+<<<<<<< HEAD
     private void cargarGrilla(){
         try {
             String sql = "select * from vsolicitud";
@@ -63,12 +73,51 @@ public class FrmPrincipal extends javax.swing.JFrame {
                     datos[2] = z.rs.getString("rubro");
                     datos[3] = z.rs.getString("programa");
                     datos[4] = z.rs.getString("estado");
+=======
+     
+    private void cargarGrilla(){
+        try {
+            String sql = "select id, Responsable,  FechaSol, Área, Estado from vsolicitud;";
+                String[] datos = new String[4];
+                z.snt = z.con.createStatement();
+                z.rs = z.snt.executeQuery(sql);
+                while(z.rs.next()){
+                    datos[0] = z.rs.getString(1);
+                    datos[1] = z.rs.getString(2);
+                    datos[2] = z.rs.getString(3);
+                    datos[3] = z.rs.getString(4);
+                    datos[4] = z.rs.getString(5);
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                     modelo.addRow(datos);
                 }
         } catch (SQLException ex) {
             Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+<<<<<<< HEAD
+=======
+    
+    
+      
+    private void rolusuario(){
+        int rol = 3;
+        try {
+            
+            String sql = "SELECT rol FROM usuario where username like '%"+FrmAcceso.usuario+"'";
+            z.snt = z.con.createStatement();
+            z.rs = z.snt.executeQuery(sql);
+            z.rs.next();
+            rol = z.rs.getInt(1);
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        if( rol >= 2 ){
+            menAcerca.setVisible(false);
+            menUsuarios.setVisible(false);
+            menGrupos.setVisible(false);
+        }
+    }
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -81,6 +130,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
+<<<<<<< HEAD
         tabla = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         lbluser = new javax.swing.JLabel();
@@ -95,6 +145,17 @@ public class FrmPrincipal extends javax.swing.JFrame {
         menGrupos = new javax.swing.JMenuItem();
         menUsuarios = new javax.swing.JMenuItem();
         menAreas = new javax.swing.JMenuItem();
+=======
+        jTable1 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        lbluser = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        menSol = new javax.swing.JMenu();
+        menGrupos = new javax.swing.JMenuItem();
+        menUsuarios = new javax.swing.JMenuItem();
+        menAreas = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         jMenu2 = new javax.swing.JMenu();
         menAcerca = new javax.swing.JMenuItem();
 
@@ -102,6 +163,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Solicitudes"));
 
+<<<<<<< HEAD
         tabla.setModel(modelo);
         tabla.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -109,28 +171,42 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(tabla);
+=======
+        jTable1.setModel(modelo);
+        jScrollPane1.setViewportView(jTable1);
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+=======
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 551, Short.MAX_VALUE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
                 .addContainerGap())
+=======
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
 
         jLabel1.setText("Usuario: ");
 
         lbluser.setText("jLabel2");
 
+<<<<<<< HEAD
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro"));
 
         cboFiltro.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "descripcion", "usrsol", "rubro", "programa", "estado", "area" }));
@@ -190,6 +266,14 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(menArchivo);
 
         menHerramientas.setText("Herramientas");
+=======
+        menSol.setText("Archivo");
+        menSol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menSolActionPerformed(evt);
+            }
+        });
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
         menGrupos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         menGrupos.setText("Grupos");
@@ -198,7 +282,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
                 menGruposActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         menHerramientas.add(menGrupos);
+=======
+        menSol.add(menGrupos);
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
         menUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         menUsuarios.setText("Usuarios");
@@ -207,7 +295,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
                 menUsuariosActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         menHerramientas.add(menUsuarios);
+=======
+        menSol.add(menUsuarios);
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
         menAreas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         menAreas.setText("Áreas");
@@ -216,9 +308,24 @@ public class FrmPrincipal extends javax.swing.JFrame {
                 menAreasActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         menHerramientas.add(menAreas);
 
         jMenuBar1.add(menHerramientas);
+=======
+        menSol.add(menAreas);
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem1.setText("Solicitud");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        menSol.add(jMenuItem1);
+
+        jMenuBar1.add(menSol);
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
         jMenu2.setText("Ayuda");
         jMenu2.addActionListener(new java.awt.event.ActionListener() {
@@ -247,6 +354,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                         .addGap(19, 19, 19)
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
@@ -257,27 +365,52 @@ public class FrmPrincipal extends javax.swing.JFrame {
                             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(lbluser)
+                        .addGap(0, 421, Short.MAX_VALUE)))
+                .addContainerGap())
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                .addContainerGap()
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(lbluser))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34))
+=======
+                .addContainerGap(13, Short.MAX_VALUE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     private void menArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menArchivoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menArchivoActionPerformed
+=======
+    private void menSolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menSolActionPerformed
+        // TFODO add your handling code here:
+    }//GEN-LAST:event_menSolActionPerformed
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
     private void menGruposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menGruposActionPerformed
         new FrmRol().setVisible(true);
@@ -299,6 +432,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         new FrmArea().setVisible(true);
     }//GEN-LAST:event_menAreasActionPerformed
 
+<<<<<<< HEAD
     private void menSolicitudActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menSolicitudActionPerformed
         FrmSolicitud sol = new FrmSolicitud();
         sol.setVisible(true);
@@ -343,11 +477,19 @@ public class FrmPrincipal extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox cboFiltro;
+=======
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        new FrmSolicitud().setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbluser;
@@ -360,5 +502,15 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem menUsuarios;
     private javax.swing.JTable tabla;
     private javax.swing.JTextField txtFiltro;
+=======
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lbluser;
+    private javax.swing.JMenuItem menAcerca;
+    private javax.swing.JMenuItem menAreas;
+    private javax.swing.JMenuItem menGrupos;
+    private javax.swing.JMenu menSol;
+    private javax.swing.JMenuItem menUsuarios;
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
     // End of variables declaration//GEN-END:variables
 }

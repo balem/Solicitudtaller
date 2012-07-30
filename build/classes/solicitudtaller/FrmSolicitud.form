@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?>
+=======
+<?xml version="1.1" encoding="UTF-8" ?>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
 <Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
@@ -27,7 +31,11 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
           <Component id="PnlSolicitud" min="-2" pref="649" max="-2" attributes="0"/>
+=======
+          <Component id="PnlSolicitud" alignment="0" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
       </Group>
     </DimensionLayout>
   </Layout>
@@ -57,14 +65,20 @@
                                               <Component id="lblNumero" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="lblRubro" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="lblPrograma" alignment="0" max="32767" attributes="0"/>
+<<<<<<< HEAD
                                               <Component id="lblRubro1" alignment="0" min="-2" max="-2" attributes="0"/>
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                                           </Group>
                                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Component id="cboPrograma" alignment="1" pref="176" max="32767" attributes="0"/>
                                               <Component id="txtNumero" alignment="1" max="32767" attributes="0"/>
                                               <Component id="cboRubro" alignment="1" max="32767" attributes="0"/>
+<<<<<<< HEAD
                                               <Component id="cboArea" alignment="1" max="32767" attributes="0"/>
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                                           </Group>
                                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -108,15 +122,23 @@
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+=======
+                          <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                           <Component id="btnGuardar" min="-2" pref="100" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Component id="btnBorrar" min="-2" pref="100" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Component id="btnCancelar" min="-2" pref="100" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Component id="btnSalir" min="-2" pref="100" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+=======
+                          <EmptySpace min="0" pref="144" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -139,7 +161,11 @@
                               <Component id="cboPrograma" alignment="2" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+<<<<<<< HEAD
                       <Component id="PnlTipo" min="-2" max="-2" attributes="0"/>
+=======
+                      <Component id="PnlTipo" min="-2" pref="52" max="-2" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                   </Group>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="2" attributes="0">
@@ -148,6 +174,7 @@
                       <Component id="lblResponsable" alignment="2" min="-2" max="-2" attributes="0"/>
                       <Component id="txtResponsable" alignment="2" min="-2" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="2" attributes="0">
                       <Component id="lblRubro1" alignment="2" min="-2" max="-2" attributes="0"/>
@@ -156,6 +183,11 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="PnlDescripcion" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+=======
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="PnlDescripcion" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="12" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblCantidad" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblDescripcion" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -170,14 +202,23 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="pnlRegistro" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
+=======
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnGuardar" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="btnBorrar" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="btnCancelar" alignment="0" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                       <Component id="btnSalir" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+=======
+                  </Group>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
               </Group>
           </Group>
         </DimensionLayout>
@@ -225,7 +266,11 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+<<<<<<< HEAD
                       <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
+=======
+                      <EmptySpace min="0" pref="7" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="RbBien" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="RbServicio" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -343,7 +388,11 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                   <Component id="jScrollPane2" min="-2" pref="176" max="-2" attributes="0"/>
+=======
+                  <Component id="jScrollPane2" alignment="0" pref="221" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
               </Group>
             </DimensionLayout>
           </Layout>
@@ -400,10 +449,14 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jScrollPane1" min="-2" pref="104" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
                   </Group>
+=======
+                  <Component id="jScrollPane1" alignment="0" pref="137" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
               </Group>
             </DimensionLayout>
           </Layout>
@@ -443,6 +496,7 @@
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="btnSalir">
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
@@ -471,6 +525,8 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cboAreaActionPerformed"/>
           </Events>
         </Component>
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
       </SubComponents>
     </Container>
   </SubComponents>

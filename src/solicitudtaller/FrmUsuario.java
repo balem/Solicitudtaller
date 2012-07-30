@@ -203,7 +203,11 @@ public class FrmUsuario extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblClave)
                     .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                .addContainerGap(89, Short.MAX_VALUE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Registros"));
@@ -220,6 +224,7 @@ public class FrmUsuario extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(24, Short.MAX_VALUE))
@@ -229,6 +234,17 @@ public class FrmUsuario extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 .addContainerGap(30, Short.MAX_VALUE))
         );
 
@@ -299,7 +315,11 @@ public class FrmUsuario extends javax.swing.JFrame {
                         .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< HEAD
                 .addContainerGap(51, Short.MAX_VALUE))
+=======
+                .addContainerGap(52, Short.MAX_VALUE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -333,7 +353,11 @@ public class FrmUsuario extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addContainerGap(27, Short.MAX_VALUE)
+=======
+                .addContainerGap(33, Short.MAX_VALUE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -541,7 +565,11 @@ public class FrmUsuario extends javax.swing.JFrame {
                     }else{
                         sql = "UPDATE usuario SET username ='"+txtUsername.getText()+"', nombre = '"+txtNombre.getText()+
                                 "', apellido = '"+txtApellido.getText()+"', email = '"+txtEmail.getText()+"', telefono = '"+
+<<<<<<< HEAD
                         txtTelefono.getText()+"', rol = "+rol+", estado = '"+cboEstado.getSelectedItem()+"', cargo = "+cargo+
+=======
+                        txtTelefono.getText()+"', rol = "+rol+", estado = '"+cboEstado.getSelectedItem()+"', cargor = "+cargo+
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                                 ", password = '"+hs.hash(txtClave.getText().trim().toString())+"' where id = "+
                                 txtId.getText();
                     }              

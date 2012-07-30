@@ -43,7 +43,13 @@ public class FrmAcceso extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
         txtClave = new javax.swing.JPasswordField();
 
+<<<<<<< HEAD
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+=======
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Formulario de Acceso");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Formulario de Acceso"));
 
@@ -94,10 +100,17 @@ public class FrmAcceso extends javax.swing.JFrame {
                             .addComponent(txtUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(57, 57, 57)
+<<<<<<< HEAD
                         .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(138, Short.MAX_VALUE))
+=======
+                        .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(50, Short.MAX_VALUE))
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,7 +125,11 @@ public class FrmAcceso extends javax.swing.JFrame {
                             .addComponent(lblClave)
                             .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+<<<<<<< HEAD
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+=======
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                     .addComponent(btnIngresar)
                     .addComponent(btnSalir))
                 .addContainerGap(17, Short.MAX_VALUE))
@@ -122,9 +139,13 @@ public class FrmAcceso extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+=======
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,12 +189,18 @@ public class FrmAcceso extends javax.swing.JFrame {
                 if(txtUsuario.getText().trim().equals(z.rs.getString("username")) &&
                         pass.equals(z.rs.getString("password"))){
                     usuario = z.rs.getString("username");
+<<<<<<< HEAD
                     FrmPrincipal principal = new FrmPrincipal();
                     principal.setLocationRelativeTo(null);
                     principal.setVisible(true);
                     this.dispose();
                     bandera = 1;
                         
+=======
+                    new FrmPrincipal().setVisible(true);
+                    this.dispose();
+                    bandera = 1;   
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                 }
             }
             if(bandera == 0 ){   
@@ -193,9 +220,13 @@ public class FrmAcceso extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
+<<<<<<< HEAD
                 FrmAcceso acceso = new FrmAcceso();
                 acceso.setVisible(true);
                 acceso.setLocationRelativeTo(null);
+=======
+                new FrmAcceso().setVisible(true);
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
             }
         });
     }

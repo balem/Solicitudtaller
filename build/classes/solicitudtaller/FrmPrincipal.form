@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?>
+=======
+<?xml version="1.1" encoding="UTF-8" ?>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 
 <Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
+<<<<<<< HEAD
         <Menu class="javax.swing.JMenu" name="menArchivo">
+=======
+        <Menu class="javax.swing.JMenu" name="menSol">
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
           <Properties>
             <Property name="text" type="java.lang.String" value="Archivo"/>
           </Properties>
           <Events>
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menArchivoActionPerformed"/>
           </Events>
           <SubComponents>
@@ -41,6 +50,11 @@
             <Property name="text" type="java.lang.String" value="Herramientas"/>
           </Properties>
           <SubComponents>
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menSolActionPerformed"/>
+          </Events>
+          <SubComponents>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
             <MenuItem class="javax.swing.JMenuItem" name="menGrupos">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
@@ -74,6 +88,20 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menAreasActionPerformed"/>
               </Events>
             </MenuItem>
+<<<<<<< HEAD
+=======
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+Alt+A"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Solicitud"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
+            </MenuItem>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
@@ -125,10 +153,18 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+<<<<<<< HEAD
+=======
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="lbluser" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -139,22 +175,38 @@
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
+=======
+                      <EmptySpace min="0" pref="421" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
+<<<<<<< HEAD
               <EmptySpace max="32767" attributes="0"/>
+=======
+              <EmptySpace max="-2" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lbluser" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
+<<<<<<< HEAD
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+=======
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="13" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
           </Group>
       </Group>
     </DimensionLayout>
@@ -172,19 +224,28 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="579" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
+=======
+              <Component id="jScrollPane1" alignment="0" pref="551" max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <Component id="jScrollPane1" pref="220" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
+=======
+                  <Component id="jScrollPane1" min="-2" pref="170" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
               </Group>
           </Group>
         </DimensionLayout>
@@ -197,7 +258,11 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
+<<<<<<< HEAD
             <Component class="javax.swing.JTable" name="tabla">
+=======
+            <Component class="javax.swing.JTable" name="jTable1">
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="modelo" type="code"/>
@@ -209,9 +274,12 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+<<<<<<< HEAD
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tablaMouseClicked"/>
               </Events>
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
             </Component>
           </SubComponents>
         </Container>
@@ -227,6 +295,7 @@
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
     </Component>
+<<<<<<< HEAD
     <Container class="javax.swing.JPanel" name="jPanel2">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -279,5 +348,7 @@
         </Component>
       </SubComponents>
     </Container>
+=======
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
   </SubComponents>
 </Form>

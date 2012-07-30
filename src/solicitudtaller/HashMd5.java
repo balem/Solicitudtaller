@@ -11,6 +11,11 @@ import java.security.NoSuchAlgorithmException;
  *
  * @author Daniel San Nicolas
  */
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 117d711f1bf4317360a04e533c0ce0b2a6f30418
 public class HashMd5 {
 
    private static final char[] HEXADECIMAL = { '0', '1', '2', '3',
